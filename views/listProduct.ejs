@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Liste des Produits</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>titre</th>
+                <th>description</th>
+                <th>image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <% allProduct.forEach(function(product) { %>
+                <td><%= product.id %></td>
+                <td><%= product.titre %></td>
+                <td><%= product.description %></td>
+                <td><img src="/upload/<%= product.img %>" alt="<%= product.img %>"></td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+
+
+    <a href="/dashboard">Dashboard</a>
+    <a href="/addProduct">Ajouter un produit</a>
+</body>
+</html>

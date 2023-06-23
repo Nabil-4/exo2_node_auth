@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ajout d'un produit</h1>
+
+    <form action="/addProduct" method="POST">
+        <label for="titre">Titre</label>
+        <input type="text" id="titre" name="titre" required>
+
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" required>
+
+        <label for="img">Image</label>
+        <input type="file" id="img" name="img" required>
+
+        <input type="submit" value="Ajouter">
+    </form>
+</body>
+</html>
